@@ -19,9 +19,7 @@ for i in ip:
     s+=str(i)+' ;';
 s=s[:-1]
 ip=matrix(s)
-print(ip)
 t=ip.getT()
 th=linalg.pinv((t*ip))*t*op
 h='n^2*'+str(th[2][0])+'+n*'+str(th[1][0])+'+'+str(th[0][0])
 print(h)
-print(th)
